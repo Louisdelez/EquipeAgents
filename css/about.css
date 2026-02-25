@@ -1,0 +1,355 @@
+/* === About page === */
+
+.about-back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--accent-blue);
+}
+.about-back-icon { display: flex; margin-right: 4px; }
+.about-back-icon svg { width: 18px; height: 18px; }
+.about-back-text { font-size: 17px; }
+
+/* === Hero === */
+.about-hero {
+    padding: 40px 20px 32px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.about-hero-sub {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* === Article === */
+.about-article {
+    padding: 0 20px 40px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.about-article h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    letter-spacing: -0.3px;
+}
+
+.about-article h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 28px 0 10px;
+}
+
+.about-article p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.about-article ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.about-article li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+/* === Callout === */
+.about-callout {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 24px 0;
+    border-left: 4px solid var(--accent-blue);
+}
+
+.about-callout-accent {
+    border-left-color: var(--accent-green);
+}
+
+.about-callout-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.about-callout ul {
+    padding-left: 18px;
+    margin-bottom: 12px;
+}
+
+.about-callout li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+.about-callout p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.about-callout p:last-child {
+    margin-bottom: 0;
+}
+
+/* === Stats === */
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.about-stat {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 20px 16px;
+    text-align: center;
+}
+
+.about-stat-number {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    margin-bottom: 6px;
+}
+
+.about-stat-label {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--text-secondary);
+}
+
+/* === Phases === */
+.about-phases {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-phase {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.about-phase-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.about-phase-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.about-phase-desc {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+
+/* === Steps === */
+.about-steps {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.about-step-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.about-step-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.about-step-desc {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+
+/* === Comparison === */
+.about-comparison {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.about-compare-col {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.about-compare-header {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.about-compare-old {
+    background: rgba(255, 69, 58, 0.15);
+    color: #ff453a;
+}
+
+.about-compare-new {
+    background: rgba(48, 209, 88, 0.15);
+    color: #30d158;
+}
+
+.about-compare-col ul {
+    padding: 12px 16px 12px 34px;
+    margin: 0;
+}
+
+.about-compare-col li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.about-compare-col li:last-child {
+    margin-bottom: 0;
+}
+
+/* === Audience === */
+.about-audience {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-audience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.about-audience-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--accent-blue);
+}
+
+.about-audience-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.about-audience-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.about-audience-desc {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+
+/* === CTA === */
+.about-cta {
+    text-align: center;
+    padding: 0 20px 60px;
+}
+
+.about-cta-btn {
+    display: inline-block;
+    background: var(--accent-green);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.about-cta-btn:active {
+    opacity: 0.8;
+}
+
+/* === Responsive === */
+
+@media (min-width: 768px) {
+    .about-hero { padding: 56px 24px 40px; }
+    .about-hero h1 { font-size: 40px; }
+    .about-hero-sub { font-size: 18px; }
+    .about-article { padding: 0 24px 48px; }
+    .about-article h2 { font-size: 28px; }
+    .about-comparison { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1024px) {
+    .about-hero { padding: 64px 32px 48px; }
+    .about-hero h1 { font-size: 46px; }
+    .about-article { padding: 0 32px 56px; }
+    .about-stat-number { font-size: 42px; }
+}

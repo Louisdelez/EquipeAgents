@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decouvrez comment 24 agents IA specialises donnent aux independants et startups la meme puissance de structuration que les grandes entreprises.">
+    <title>A propos — Equipe Agents IA</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%230a84ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z'/><path d='M9 13a4.5 4.5 0 0 0 3-4'/><path d='M6.003 5.125A3 3 0 0 0 6.401 6.5'/><path d='M3.477 10.896a4 4 0 0 1 .585-.396'/><path d='M6 18a4 4 0 0 1-1.967-.516'/><path d='M12 13h4'/><path d='M12 18h6a2 2 0 0 1 2 2v1'/><path d='M12 8h8'/><path d='M16 8V5a2 2 0 0 1 2-2'/><circle cx='16' cy='13' r='.5'/><circle cx='18' cy='3' r='.5'/><circle cx='20' cy='21' r='.5'/><circle cx='20' cy='8' r='.5'/></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="js/vendor/lucide.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/i18n-about.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="about-back" id="backLink" aria-label="Retour aux agents">
+                <span class="about-back-icon"><i data-lucide="chevron-left"></i></span>
+                <span class="about-back-text" id="backText">Agents</span>
+            </a>
+            <div class="header-actions" id="headerActions"></div>
+        </div>
+    </header>
+
+    <main class="about" id="aboutContent"></main>
+
+    <script>
+        // Apply language and render about page
+        document.documentElement.lang = I18N.current;
+        document.getElementById('backText').textContent = I18N.t('back');
+        document.getElementById('backLink').setAttribute('aria-label', I18N.t('back'));
+        document.title = I18N.t('aboutPageTitle') || 'A propos';
+
+        // Render header actions with lang selector + theme toggle
+        const headerActions = document.getElementById('headerActions');
+        headerActions.innerHTML = `
+            ${renderLangSelector()}
+            <button class="theme-toggle" id="themeToggle" aria-label="${I18N.t('themeToggle')}">
+                <i data-lucide="sun"></i>
+            </button>
+        `;
+        initLangSelector();
+
+        // Render about content
+        document.getElementById('aboutContent').innerHTML = renderAboutContent(I18N.current);
+
+        lucide.createIcons();
+    </script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
