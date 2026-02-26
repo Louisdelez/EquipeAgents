@@ -69,6 +69,8 @@ const UI_STRINGS = {
         photoDesc: 'Photo de profil de l\'agent',
         aboutLink: 'A propos',
         themeToggle: 'Changer de theme',
+        snapshot: 'Creer une snapshot',
+        snapshotCopied: 'Copie !',
         siteTitle: 'Equipe Agents IA',
         aboutPageTitle: 'A propos — Equipe Agents IA',
         phaseLabels: {
@@ -103,6 +105,8 @@ const UI_STRINGS = {
         photoDesc: 'Agent profile photo',
         aboutLink: 'About',
         themeToggle: 'Toggle theme',
+        snapshot: 'Create a snapshot',
+        snapshotCopied: 'Copied!',
         siteTitle: 'AI Agents Team',
         aboutPageTitle: 'About — AI Agents Team',
         phaseLabels: {
@@ -137,6 +141,8 @@ const UI_STRINGS = {
         photoDesc: 'Profilbild des Agenten',
         aboutLink: 'Uber uns',
         themeToggle: 'Thema wechseln',
+        snapshot: 'Snapshot erstellen',
+        snapshotCopied: 'Kopiert!',
         siteTitle: 'KI-Agenten Team',
         aboutPageTitle: 'Uber uns — KI-Agenten Team',
         phaseLabels: {
@@ -171,6 +177,8 @@ const UI_STRINGS = {
         photoDesc: 'Foto profilo dell\'agente',
         aboutLink: 'Chi siamo',
         themeToggle: 'Cambia tema',
+        snapshot: 'Crea snapshot',
+        snapshotCopied: 'Copiato!',
         siteTitle: 'Team Agenti IA',
         aboutPageTitle: 'Chi siamo — Team Agenti IA',
         phaseLabels: {
@@ -205,6 +213,8 @@ const UI_STRINGS = {
         photoDesc: 'Foto de perfil del agente',
         aboutLink: 'Acerca de',
         themeToggle: 'Cambiar tema',
+        snapshot: 'Crear snapshot',
+        snapshotCopied: 'Copiado!',
         siteTitle: 'Equipo Agentes IA',
         aboutPageTitle: 'Acerca de — Equipo Agentes IA',
         phaseLabels: {

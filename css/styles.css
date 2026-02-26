@@ -125,6 +125,49 @@ body {
 .header-link:active { background: var(--bg-secondary); }
 .header-link svg { width: 20px; height: 20px; }
 
+/* === Snapshot button === */
+.snapshot-btn {
+    background: var(--accent-blue);
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background 0.2s ease, opacity 0.2s ease;
+}
+.snapshot-btn:hover { opacity: 0.85; }
+.snapshot-btn:active { opacity: 0.7; }
+.snapshot-btn svg { width: 16px; height: 16px; }
+
+/* === Snapshot toast === */
+.snapshot-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background: var(--accent-green);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+.snapshot-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
 /* === Language selector === */
 .lang-selector {
     position: relative;
